@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2e6e6;
+    height: 100vh;
+}
+#root{
+    background-color: #d2cfcf;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+button{
+    background-color: #0841bc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#root:hover{
+    background-color: #abb0b5;
+}
+/* add three 3 effect oon root */
+#root:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    
+}

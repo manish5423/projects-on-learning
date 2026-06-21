@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 244, 233, 0.868);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#root{
+    background-color: rgb(63, 27, 76);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#message-label{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#pass{
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 170px;
+   
+}
+
+.bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: bubble-up 2s ease-out forwards;
+}
+
+@keyframes bubble-up {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(2);
+        opacity: 0;
+    }
+}
