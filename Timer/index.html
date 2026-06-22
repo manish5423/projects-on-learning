@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root">
+        <div id="timer-container">
+            <h1 id="timer-title">Timer</h1>
+            <div id="display-container">
+                <input type="number" id="hh" placeholder="00" min="0" max="99"> 
+                <span>:</span>
+                <input type="number" id="mm" placeholder="00" min="0" max="59">
+                <span>:</span>
+                <input type="number" id="ss" placeholder="00" min="0" max="59">
+            </div>
+            
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div class="quick-add">
+                <button data-time="60">+1 Min</button>
+                <button data-time="300">+5 Min</button>
+                <button data-time="600">+10 Min</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
