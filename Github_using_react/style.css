@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: auto;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(191, 183, 169);
+    /* box-shadow: inset 2 0 10px #000000; */
+
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 2 0 10px #000000;
+}
+.cards{
+    width: 300px;
+    height: 400px;
+    font-size: 30px;
+    border: solid 2px rgb(20, 20, 19);
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-top: 20px;
+    margin: 5px;
+
+    /* Transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover{
+    transform: translateY(-10px); /* Move card up */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Add shadow */
+    background-color: rgb(88, 32, 32);
+}
+
+
+#an{
+    width: 40px;
+    height: 50px;
+    background-color: rgb(88, 32, 32);
+    border-radius: 7px;
+    color: rgb(217, 206, 206);
+    padding: 10px;
+}
+h3{
+    color: rgb(217, 206, 206);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
